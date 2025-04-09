@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E356EC7-176E-4C6E-B682-BEF68218D0A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>yc196502005</RootNamespace>
+    <AssemblyName>yc196502005</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\ysncyhn\Kayit_v3_mysql\veri-tabani-kayit\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminAyar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAyar.Designer.cs">
+      <DependentUpon>AdminAyar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminIndex.Designer.cs">
+      <DependentUpon>AdminIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IletisimIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\IletisimIndex.Designer.cs">
+      <DependentUpon>IletisimIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SliderIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\SliderIndex.Designer.cs">
+      <DependentUpon>SliderIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SosyalIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\SosyalIndex.Designer.cs">
+      <DependentUpon>SosyalIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\AdminClass.cs" />
+    <Compile Include="Class\AnasayfaClass.cs" />
+    <Compile Include="Class\Baglan.cs" />
+    <Compile Include="Class\IletisimClass.cs" />
+    <Compile Include="Class\Islem.cs" />
+    <Compile Include="Class\MagazaClass.cs" />
+    <Compile Include="Class\SearchClass.cs" />
+    <Compile Include="Class\SepetClass.cs" />
+    <Compile Include="Class\SiparisClass.cs" />
+    <Compile Include="Class\SliderClass.cs" />
+    <Compile Include="Class\SosyalClass.cs" />
+    <Compile Include="Class\UrunClass.cs" />
+    <Compile Include="Class\UyeClass.cs" />
+    <Compile Include="Magaza\MagazaAyar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magaza\MagazaAyar.Designer.cs">
+      <DependentUpon>MagazaAyar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magaza\MagazaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magaza\MagazaGiris.Designer.cs">
+      <DependentUpon>MagazaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magaza\MagazaOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magaza\MagazaOlustur.Designer.cs">
+      <DependentUpon>MagazaOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magaza\Siparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magaza\Siparis.Designer.cs">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magaza\UrunAyar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magaza\UrunAyar.Designer.cs">
+      <DependentUpon>UrunAyar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magaza\UrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magaza\UrunEkle.Designer.cs">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchIndex.Designer.cs">
+      <DependentUpon>SearchIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\Iletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\Iletisim.Designer.cs">
+      <DependentUpon>Iletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\MagazaIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\MagazaIndex.Designer.cs">
+      <DependentUpon>MagazaIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\MemberAyar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\MemberAyar.Designer.cs">
+      <DependentUpon>MemberAyar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\SepetIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\SepetIndex.Designer.cs">
+      <DependentUpon>SepetIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\UrunIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\UrunIndex.Designer.cs">
+      <DependentUpon>UrunIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\UyeIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\UyeIndex.Designer.cs">
+      <DependentUpon>UyeIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\Uyelik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\Uyelik.Designer.cs">
+      <DependentUpon>Uyelik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\UyeGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\UyeGiris.Designer.cs">
+      <DependentUpon>UyeGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\UyeOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\UyeOl.Designer.cs">
+      <DependentUpon>UyeOl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\AdminAyar.resx">
+      <DependentUpon>AdminAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminIndex.resx">
+      <DependentUpon>AdminIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\IletisimIndex.resx">
+      <DependentUpon>IletisimIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SliderIndex.resx">
+      <DependentUpon>SliderIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SosyalIndex.resx">
+      <DependentUpon>SosyalIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magaza\MagazaAyar.resx">
+      <DependentUpon>MagazaAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magaza\MagazaGiris.resx">
+      <DependentUpon>MagazaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magaza\MagazaOlustur.resx">
+      <DependentUpon>MagazaOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magaza\Siparis.resx">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magaza\UrunAyar.resx">
+      <DependentUpon>UrunAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magaza\UrunEkle.resx">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SearchIndex.resx">
+      <DependentUpon>SearchIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\Iletisim.resx">
+      <DependentUpon>Iletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\MagazaIndex.resx">
+      <DependentUpon>MagazaIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\MemberAyar.resx">
+      <DependentUpon>MemberAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\SepetIndex.resx">
+      <DependentUpon>SepetIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\UrunIndex.resx">
+      <DependentUpon>UrunIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\UyeIndex.resx">
+      <DependentUpon>UyeIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\Uyelik.resx">
+      <DependentUpon>Uyelik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\UyeGiris.resx">
+      <DependentUpon>UyeGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\UyeOl.resx">
+      <DependentUpon>UyeOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.fw.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
